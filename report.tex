@@ -3,7 +3,7 @@
 \usepackage{cite}
 
 \title{Survey Research}
-\author{Victoria Bella, Sebastian Biewer, Marion Maugendre, Daniel Naro}
+\author{Victoria Beleuta, Sebastian Biewer, Marion Maugendre, Daniel Naro}
 \date{October 2014}
 
 \begin{document}
@@ -30,6 +30,30 @@ To better assess the initial state of each individual, we can complement the sur
 
 We have seen different designs that enables us to assess properties of populations, or to test hypothesis by analyzing the evolution of the answers. According to the factors we have to take into account to make the study trustworthy, we can require less constraints: do we need to evaluate exactly the same individuals?, do we need more than one iteration of the survey? If we require this, we will need more resources, maybe resources that we do not have. In the end, we see that there is no one design which fits all survey research. Each design has pro and cons which have to be understood in order to find the best for that study.
 
+\section{Results analysis}
+In order to have meaningful data to analyse, we want to have enough participants for our study. However, it is often very hard to motivate people to take our survey and to provide us with accurate and complete answers. Survey researchers often use small monetary rewards or gifts, but this often proves ineffective. In most casses, people will complete a survey if they know how this study will benefit them. For this reason it is important to provide the participants with the following information\cite{Kitchenham4}:
+\begin{itemize}
+\item the purpose of the study;\\
+\item relevance to the participant;\\
+\item importance of each participant's response;\\
+\item the process of selecting the participants;\\
+\item how the confidentiality of the participants is preserved;\\
+\end{itemize}
+
+After all the responses have been collected, we can start analysing our data. The first step is the data validation, meaning all responses have to be checked for completeness and consistency. If our initial design of the study was well thought out, the incomplete responses should be a small part of the total data. However, if our questions are ambiguous, we can have a lot of erroneous data or blanks. In order to avoid these problems, it is recommended to use pilot surveys during our design phase. Pilot surveys help us identify which questions are most likely to cause unusuable data in the future and we can change them accordingly. 
+
+However, even if we take all the necessary steps in designing our study, different types of incomplete responses occur often, and there are different methods we can use to analyse them. Blanks can be ignored from our sample, but only after we have a look at the questions left blank to make sure there is no systematic bias introduced \cite{Kitchenham6}. If we notice that one or two particular questions have been left blank by more than one participant, we can chose to ignore only that question for all responses. If more than a couple of questions have not been answered by different groups of people, it is more appropriate to analyse all of the responses and present the results for each question separately, keeping in mind to present the different sample size for each of them. Lastly, if we only have a few blanks from a couple of participants, we can simply chose to ignore those responses.
+
+After validating the data and deciding on how we want to present it, we go on to data coding. The types of results that usually are gathered in surveys are:
+\begin{itemize}
+\item dichotomous - participants are given two choices;\\
+\item nominal - participants are given more than two unordered options;\\
+\item ordinal - participants are given more than two ordered options;\\
+\item continuous;
+\end{itemize} 
+In order to use many of the statistical packages available, we have to convert nominal and ordinal scale data from category names to numerical scores. Often, the coding of data is done during the design phase, however open ended questions require human expertise to decide whether two results are equivalent or not. 
+
+There are a large number of surveys that ask people to answer questions based on a 5 point agreement scale, which is one type of \textit{ordinal scale}. It is easy to convert the results into the numerical equivalent and analyze them. However, in some cases, this approach can violate the mathematical rules for analyzing ordinal data. For example, if the data has no central tendency, the mean has no value in correlation with the actual results. This can be the case for a bimodal distribution which tells us that a large number of participants "strongly disagree" and a large number of participants "strongly agree", and the mean value could imply the wrong conclusion that most people "neighter agree or disagree". As we can see, ordinal data is very easy to collect and provides us with a lot of information but we have to make sure we look at the "big picture", such that we can use the statistical packets correctly. The most common form of analysis applied to \textit{nominal data} is to determine the proportion of responses in each category, but we can also use multi-way tables and chi-squared tests to measure different associations \cite{Kitchenham6}.
 
 \section{Survey Channels}
 In order to carry out a survey, there are several possible channels over which participants can be interviewed. One of the earliest channels was the personal interview. With the broadening of the telephone, personal interviews were more and more replaced by interviews over the phone. Today, we also have the possibility to use the web in order to carry out a survey completely digitally. The mentioned channels are the most important and most used ones, so we explain them in the following sections.
