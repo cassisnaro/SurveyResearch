@@ -95,6 +95,23 @@ In order to use many of the statistical packages available, we have to convert n
 
 There are a large number of surveys that ask people to answer questions based on a 5 point agreement scale, which is one type of \textit{ordinal scale}. It is easy to convert the results into the numerical equivalent and analyze them. However, in some cases, this approach can violate the mathematical rules for analyzing ordinal data. For example, if the data has no central tendency, the mean has no value in correlation with the actual results. This can be the case for a bimodal distribution which tells us that a large number of participants "strongly disagree" and a large number of participants "strongly agree", and the mean value could imply the wrong conclusion that most people "neighter agree or disagree". As we can see, ordinal data is very easy to collect and provides us with a lot of information but we have to make sure we look at the "big picture", such that we can use the statistical packets correctly. The most common form of analysis applied to \textit{nominal data} is to determine the proportion of responses in each category, but we can also use multi-way tables and chi-squared tests to measure different associations \cite{Kitchenham6}.
 
+\section{Example}
+In this section we will look at the paper "A survey of the relevance of computer science and software engineering education" conducted by Timothy C. Lethbridge in 1998. In this study, software developers were asked a series of questions about their education and how relevant it has been to their present careers. The collected data aims at helping educational institutions and companies to create a better curricula and training programs. The survey consisted of a series of demographic questions, followed by a larger set of questions related to topics in mathematics, software and engineering. For each topic participants were asked four key questions, which were answered on a 0 ("learned nothing at all") to 5("learned in depth") scale: 
+\begin{itemize}
+\item How much did you learn about this topic during your education?\\
+\item What is your current knowledge of this topic?\\
+\item How useful has this knowledge been in your career?\\
+\item How useful for your career would it have been to learn more about this topic?\\
+\end{itemize}
+
+The sampling process consisted of approaching companies and asking to have the paper-based or internet-based survey to their employees. While some management teams declined the request, six companies were enthusiastic to help with the study. The study was successful in gathering responses from people with diverse background education, years of expertise and careers, however, the paper also underlines some possible biases such as location (most participants belonged to the North American region), postgraduate degrees (33\% of participants had a graduate education which is higher than the general proportion in software professions), and others.
+
+Out of all the participants 7\% had at most college education, 60\% had at most a bachelor's degree, 27\% had at most a master's degree and 6\% reported having obtained a Phd degree, with an average of 9.6 years since their last degree. Analyzing the general relevance of their education to their career, the results showed a mean of 3.5 (described as "relevant at times"). However, 51\% considered their education "very relevant" while the rest were not so sure. In order to further analyse the results, the responses were split into two groups: those who answeres with $\geq4$ and $\prec4$.  Respondents educated in the US were significantly more likely to find their education
+relevant (65\%), and those with software engineering education, as expected, considered it more relevant than those with a different background. 
+
+One of the interesting observations was the fact that junior respondents found their education less relevant (43\%) in comparison to their senior coworkers. The researchers provide two possible explanations for this: "1) more senior people might have had the chance to work on a wider variety of projects which, taken cumulatively, make use of a greater fraction of their education, or 2) education might be becoming less relevant. We prefer the first explanation." \cite{lethbridge}
+
+To sum up, the study definitely provided an interesting peek into the correlation between the software engineering education and the corresponding positions. However, we should keep in mind that this survey was conducted in 1998 and we can safely assume that nowadays the situation has changed, due to a few factors such as: open source projects, new career paths, extensive amount of information available outside educational institutions, etc.
 
 
 \bibliography{mybib}{}
